@@ -1,0 +1,15 @@
+--4. alter table pracownicy add plec char(1);
+
+--5. ALTER table pracownicy with nocheck add constraint ograniczeniePlci check (plec='K' or plec='M');
+
+--6. alter table czytelnicy add constraint unikatowyPesel unique (pesel);
+
+--7. alter table wypozyczenia add constraint unikatoweKolumny unique (sygn,data_w)
+
+--8. create index ksiazka on ksiazki (tytul);
+
+--8. create index czytelnik on czytelnicy (nazwisko,imie);
+
+--9. update ksiazki set cena='54.50' where tytul='Fizyka dla dociekliwych';
+
+--10. update czytelnicy set data_ur='07/07/1987', telefon='0427770812' where nazwisko='Maczyk' and imie='Marta';
